@@ -1,0 +1,42 @@
+#navbar { 
+    background-color: #495057;
+    padding: 40px; 
+    height: 100vh; 
+} 
+
+.link { 
+    color: #e9ecef; 
+    text-decoration: none; 
+    transition: 0.2s; 
+    margin: 0; 
+    font-weight: bold; 
+    margin-bottom: 20px; 
+}
+
+.link:hover { 
+    text-decoration: none; 
+    color: white;
+} 
+
+/* .link.selected { 
+      opacity: 1; 
+  } 
+
+.link.unselectable { 
+      opacity: 0.3; 
+      pointer-events: none; 
+}  */
+ 
+.navbar-title { 
+    font-size: 20px; 
+    margin-bottom: 50px; 
+    font-weight: bold; 
+}
+
+span{ 
+    color: #ffb703; 
+}
+
+span:last-child{ 
+    opacity: 1; 
+} 

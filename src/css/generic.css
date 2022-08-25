@@ -1,0 +1,40 @@
+* {
+  font-family: 'Catamaran', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-size: medium;
+
+}
+td {
+  font-size: small;
+}
+html, 
+body { 
+  height: 100%;
+  background-color: #e9ecef;
+} 
+ 
+body { 
+  margin: 0; 
+} 
+ 
+*{ 
+  user-select: none; 
+} 
+ 
+.w100{ 
+  width: 100%; 
+} 
+ 
+.btn { 
+  border-radius: 50px; 
+  padding: 5px 23px; 
+}
+
+.btn.btn-primary{ 
+    background:  #ffb703; 
+    border-color: #ffb703; 
+} 
+
+table {
+  overflow-y: hidden;
+}

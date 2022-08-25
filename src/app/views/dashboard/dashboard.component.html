@@ -1,7 +1,21 @@
-<ul>
-    <li *ngFor="let user of users">    
-
-        {{user.username}}
-
-    </li>
-</ul>
+<h5 class="table-title text-center text-uppercase">Users list</h5>
+<div class="overflow-hidden">
+    <table class="table" class="table-data">
+        <thead>
+          <tr>
+            <th scope="col" *ngFor="let column of columns">{{column.header}}</th>
+          </tr>
+        </thead>
+        <br>
+        <tbody>
+          <tr *ngFor="let user of users">
+            <td>{{user.name}}</td>
+            <td>{{user.surname}}</td>
+            <td>{{user.dateOfBirth}}</td>
+            <td>{{user.username}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.role}}</td>
+          </tr>
+        </tbody>
+      </table>
+</div>

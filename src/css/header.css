@@ -1,0 +1,22 @@
+/* HEADER  */
+
+#header { 
+    background-color: #adb5bd; 
+    box-shadow: 0px 4px 8px 0px rgba(12, 13, 14, 0.08); 
+    width: 100%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 20px 30px; 
+}
+
+#header.title { 
+    font-size: 20px; 
+    font-weight: bold; 
+  } 
+  
+#button:hover { 
+    text-decoration: none; 
+    color: white; 
+    opacity: 0.9; 
+}  

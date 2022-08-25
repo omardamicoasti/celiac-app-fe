@@ -8,6 +8,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { DashboardComponent } from './views/dashboard/dashboard.component';
 import { HttpClientModule } from '@angular/common/http';
 
+import {TableModule} from 'primeng/table';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    TableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

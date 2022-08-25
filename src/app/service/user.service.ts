@@ -10,10 +10,10 @@ export class UserService {
   
   constructor(private _http: HttpClient) { }
 
-  getUsers() {
+  getAllUsers() {
     return this._http.get<User[]>(`${this.baseURL}/generic/user`)
   }
- 
+   
 }
 
 
