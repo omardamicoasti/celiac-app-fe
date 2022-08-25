@@ -3,21 +3,11 @@
         <span>DASH</span> 
         <span>BOARD</span> 
     </div> 
-    <ng-container> 
-        <a routerLinkActive="selected" class="link">
-            titolo
+    <ng-container *ngFor="let link of routes">
+        
+        <a [routerLink]="link.path" class="link" *ngIf="link.data" [hidden]="!link.data">
+            {{link.path}}
         </a>
-        <a routerLinkActive="selected" class="link">
-            titolo
-        </a> 
-        <a routerLinkActive="selected" class="link">
-            titolo
-        </a> 
-        <a routerLinkActive="selected" class="link">
-            titolo
-        </a> 
-        <a routerLinkActive="selected" class="link">
-            titolo
-        </a>
-    </ng-container> 
+
+    </ng-container>
 </div>
