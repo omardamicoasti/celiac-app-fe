@@ -9,18 +9,18 @@ import { UserService } from 'src/app/service/user.service';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
-  users:Observable<User> = new Observable();
+  users:User[] = [];
   
-  // users:User[] = [];
   constructor(private userService:UserService) { }
 
   ngOnInit(): void {
-    // this.users = this.userService.getUsers();
     this.getUser();
   }
 
   getUser(): void { 
-    this.users = this.userService.getUsers();
+    this.userService.getUsers().subscribe(result => { 
+      this.users = result
+    })
   }
  
 }
