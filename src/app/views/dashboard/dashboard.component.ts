@@ -31,7 +31,7 @@ export class DashboardComponent implements OnInit {
 
   getAllUser(): void { 
     this.userService.getAllUsers().subscribe(result => { 
-      this.users = result
+      this.users = result;
     })
   }
  
